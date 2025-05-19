@@ -1,0 +1,325 @@
+/*
+Theme Name: Aali
+Theme URI: https://shtheme.com/demosd/aali
+Author: Shtheme
+Author URI: https://themeforest.net/user/vergatheme
+Description: Aali is a modern elegant Personal Portfolio WordPress theme. A Personal Portfolio theme like Aali could be the best choice for your Personal portfolio, Resume, CV Website. Aali is designed for many purpose. It’s creative, minimal and clean design. It has all of the features of the perfect personal portfolio theme. Aali is suitable for any personal like programmer, designer, freelancer, developer, teacher, dancer, doctors, barber, consultant etc. who need a professional way to showcase their bio, projects and services etc.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: aali
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+
+
+.aali_tm_sidebar > ul >.widget {
+    margin: 0px 0px 60px 0px;
+    width: 100%;
+    float: left;
+}
+.aali_tm_sidebar .widget_categories ul li a {
+    text-decoration: none;
+    color: #15111e;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.aali_tm_sidebar .widget_categories ul li {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    display: block;
+}
+.aali_tm_sidebar .widget_categories ul li a:before {
+    content: '\e804';
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    /* opacity: .8; */
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    /* font-size: 120%; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ea4343;
+}
+.aali_tm_sidebar .widget_categories ul li::marker {
+	display: none;
+}
+.aali_tm_sidebar ul.wp-tag-cloud li {
+    margin: 0px 0px 10px 0px;
+    display: inline-block;
+}
+.aali_tm_sidebar ul.wp-tag-cloud li a {
+    text-decoration: none;
+    color: #15111e;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: "Josefin Sans";
+    padding: 3px 25px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 18px !important;
+    line-height: 1.7;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.aali_tm_sidebar ul.wp-tag-cloud li a:hover {
+    color: #fff;
+    background-color: #ea4343;
+}
+.aali_tm_comment_filed .input_list input {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 25px !important;
+    background-color: #fff;
+    box-shadow: 13px 13px 21px rgb(131 4 4 / 5%);
+    border: none;
+    font-size: 18px;
+    color: #aaa6b2;
+    letter-spacing: 0px;
+    margin: 0px 0px 18px 0px;
+}
+.aali_tm_comment_filed .comment-reply-title {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+p.comment-form-cookies-consent {
+	display: none;
+}
+.aali_tm_comment_filed p.form-submit input.submit {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans";
+    display: inline-block;
+    background-color: #ea4343;
+    font-weight: 700;
+    position: relative;
+    padding: 15px 46px 15px 46px;
+    border-radius: 6px;
+    border: 2px solid #ea4343;
+    white-space: nowrap;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    height: auto;
+    font-size: 15px;
+}
+.aali_tm_comment_filed p.form-submit input.submit:hover {
+    background-color: transparent;
+    color: #15111e;
+}
+body.dark .aali_tm_sidebar .widget_categories ul li a {
+    color: #fff;
+}
+body.dark .aali_tm_sidebar ul.wp-tag-cloud li a {
+    color: #fff;
+}
+.contact_form .aali_tm_button >input{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans";
+    display: inline-block;
+    background-color: #ea4343;
+    font-weight: 700;
+    position: relative;
+    padding: 15px 46px 15px 46px;
+    border-radius: 6px;
+    border: 2px solid #ea4343;
+    white-space: nowrap;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 18px;
+    height: auto;
+    line-height: inherit;
+    text-transform: capitalize;
+}
+.search .search-custom {
+    background: #fff;
+    padding: 30px;
+}
+.search .search-custom {
+    background: #fff;
+    padding: 30px;
+}
+.search .search-custom h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.search .search-custom form {
+    display: flex;
+}
+.search .search-custom form .s-input-home {
+    width: 70%;
+    height: 42px;
+    padding-left: 10px;
+    max-width: 100%;
+    border: 1px solid #999;
+}
+.search .search-custom form .btn-s-input {
+    background: #ea4343;
+    color: #fff;
+    border: 1px solid #ea4343;
+    padding: 6px 20px;
+}
+.error-page-content >h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.error-page-content >h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+.error-page-content >p {
+    margin-bottom: 50px;
+}
+.error-page-content .cs-btn-one.btn-md.btn-primary-color {
+        background: #ea4343;
+    border: 1px solid #ea4343;
+    color: #fff;
+    padding: 13px 24px;
+    margin: 0;
+    position: relative;
+}
+.error-page-content.text-center {
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+.error-page-content .cs-btn-one.btn-md.btn-primary-color:hover:after {
+    width: 100%;
+    left: 0;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+.search .search-custom {
+    background: #fff;
+    padding: 30px;
+}
+.search .search-custom {
+    background: #fff;
+    padding: 30px;
+}
+.search .search-custom h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.search .search-custom form {
+    display: flex;
+}
+.search .search-custom form .s-input-home {
+    width: 70%;
+    height: 45px;
+    padding-left: 10px;
+    max-width: 100%;
+    border: 1px solid #999;
+    padding: 0px 10px 0px;
+    margin-bottom: 0px;
+}
+.search .search-custom form .btn-s-input {
+    background: #101010;
+    color: #fff;
+    border: 1px solid #101010;
+    padding: 8px 20px 5px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #ffb900;
+    display: inline-block;
+}
+#preloader {
+    display:none;
+}
+.aali_tm_sidebar .title h3 {
+    color: #15111e;
+    font-size: 24px;
+}
+.aali_tm_sidebar .title {
+    width: 100%;
+    float: left;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+body.dark .aali_tm_sidebar .title h3 {
+    color: #fff;
+    font-size: 24px;
+}
+body.dark .aali_tm_sidebar .title {
+    background-color: transparent;
+}
+.aali_tm_sidebar .posts_list ul li .details .post_title {
+    font-size: 18px;
+}
+.aali_tm_sidebar .gallery {
+    padding-right: 20px;
+}
+@media(max-width:1650px){
+    .aali_tm_hero .socials{
+        display:none!important;
+    }
+}
+.aali_tm_pagination ul li a {
+    font-family: inherit;
+}
+.aali_tm_modalbox .service_popup_informations .descriptions p {
+    color: #111;
+}
+body.dark .aali_tm_modalbox .service_popup_informations .descriptions p {
+    color: white;
+}
+.aali_tm_sidebar .title h3 i{
+    display:none;
+}
